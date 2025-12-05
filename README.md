@@ -39,7 +39,10 @@ It’s simply a hands-on way to explore the system behind React’s rendering.
 
 ## Installation
 
-git clone https://github.com/your-username/fiber-viz
+git clone https://github.com/Omaima-Ameen/fiber-viz
+
+
+
 cd fiber-viz
 npm install
 npm run dev   # For Vite
@@ -55,7 +58,7 @@ npm start     # CRA
 
 
 
-⚠️ Notes
+Notes
 
 Uses React's private internals (__reactFiber$), which may change between versions
 
