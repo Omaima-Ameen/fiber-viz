@@ -45,12 +45,15 @@ git clone https://github.com/Omaima-Ameen/fiber-viz
 cd fiber-viz
 
 npm install
-npm run dev   # For Vite
+npm run dev  # For Vite
 
 # or
 
-npm start     # CRA
+npm start  # CRA
 
+`````
+
+----------------------------------------------------------
 
 ## How React Fiber Works 
 
