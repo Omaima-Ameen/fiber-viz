@@ -8,19 +8,19 @@ Its purpose is to understand how React’s Fiber architecture works internally b
 This project is intentionally minimal, lightweight, and focused only on making the internal Fiber structure visible in a safe, simplified format.
 
 
-**Click any React-rendered DOM element to inspect its Fiber node**
+- **Click any React-rendered DOM element to inspect its Fiber node**
 
-**Two visualization modes:**
+- **Two visualization modes:**
 
-**Raw Fiber Summary - readable, safe breakdown of the internal Fiber object**
+- **Raw Fiber Summary - readable, safe breakdown of the internal Fiber object**
 
-**Serialized Fiber Tree - a depth-limited structural view**
+- **Serialized Fiber Tree - a depth-limited structural view**
 
-**Implemented using plain React + TailwindCSS**
+- **Implemented using plain React + TailwindCSS**
 
-**Optimized to avoid browser freezes**
+- **Optimized to avoid browser freezes**
 
-**Designed purely for React internals learning / debugging experiments**
+- **Designed purely for React internals learning / debugging experiments**
 
 
 React’s Fiber architecture is powerful but not directly visible.
