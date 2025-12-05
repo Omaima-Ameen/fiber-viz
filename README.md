@@ -1,16 +1,62 @@
-# React + Vite
+## fiber-viz
+----------------------
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+fiber-viz is a small experimental tool built purely for learning and exploration.
+Its purpose is to understand how React’s Fiber architecture works internally by allowing you to click on elements in the UI and instantly inspect the Fiber node attached to them.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is intentionally minimal, lightweight, and focused only on making the internal Fiber structure visible in a safe, simplified format.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Click any React-rendered DOM element to inspect its Fiber node**
 
-## Expanding the ESLint configuration
+**Two visualization modes:**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Raw Fiber Summary - readable, safe breakdown of the internal Fiber object**
+
+**Serialized Fiber Tree - a depth-limited structural view**
+
+**Implemented using plain React + TailwindCSS**
+
+**Optimized to avoid browser freezes**
+
+**Designed purely for React internals learning / debugging experiments**
+
+
+React’s Fiber architecture is powerful but not directly visible.
+This tool gives a simple interface to see how React links DOM nodes to Fiber nodes and observe internal fields like tag, type, lanes, flags, child/sibling relationships
+and also visualize the tree-like structure React uses during reconciliation
+
+
+It’s simply a hands-on way to explore the system behind React’s rendering.
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+## Installation
+
+git clone https://github.com/your-username/fiber-viz
+cd fiber-viz
+npm install
+npm run dev   # For Vite
+
+
+or
+
+npm start     # CRA
+
+
+
+
+
+
+
+⚠️ Notes
+
+Uses React's private internals (__reactFiber$), which may change between versions
+
+Intended only for learning and debugging React’s internal behavior !!
