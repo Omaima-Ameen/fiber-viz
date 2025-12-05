@@ -2,11 +2,7 @@
 ----------------------
 
 
-<p align="center">
-  <img src="https://github.com/Omaima-Ameen/fiber-viz/assets/banner-fiber-viz.svg" width="800" />
-</p>
-
-fiber-viz is a small experimental tool built purely for learning and exploration.
+Fiber-viz is a small experimental tool built purely for learning and exploration.
 Its purpose is to understand how React’s Fiber architecture works internally by allowing you to click on elements in the UI and instantly inspect the Fiber node attached to them.
 
 This project is intentionally minimal, lightweight, and focused only on making the internal Fiber structure visible in a safe, simplified format.
@@ -66,26 +62,20 @@ Every DOM element rendered by React is linked to a hidden Fiber node stored insi
 __reactFiber$<randomId>
 
 
-Each Fiber node contains:
-
-the component type
-
-props & state
-
-parent fiber (return)
-
-first child (child)
-
-next sibling (sibling)
-
-effect flags
-
-lane (priority) information
+Each Fiber node contain, the component type, props & state , parent fiber (return) , first child (child), next sibling (sibling), effect flags , lane (priority) information
 
 React uses this structure to schedule, pause, resume, and prioritize rendering work.
 fiber-viz exposes a safe, summarized version of this structure so you can see
 how React organizes updates under the hood.
 
+
+<p align="center">
+  <img src="./src/screenshots/ss1.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="./src/screenshots/ss2.png" width="700" />
+</p>
 
 
 Notes
