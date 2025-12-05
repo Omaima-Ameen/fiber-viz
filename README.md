@@ -43,14 +43,14 @@ git clone https://github.com/Omaima-Ameen/fiber-viz
 
 
 
-cd fiber-viz
-npm install
-npm run dev   # For Vite
+* cd fiber-viz
+* npm install
+* npm run dev   # For Vite
 
 
 or
 
-npm start     # CRA
+* npm start     # CRA
 
 
 
@@ -62,7 +62,15 @@ Every DOM element rendered by React is linked to a hidden Fiber node stored insi
 __reactFiber$<randomId>
 
 
-Each Fiber node contain, the component type, props & state , parent fiber (return) , first child (child), next sibling (sibling), effect flags , lane (priority) information
+Each Fiber node contains
+
+* Component type
+* Props & state 
+* Parent fiber (return)
+* First child (child)
+* Next sibling (sibling)
+* Effect flags 
+* Lane (priority) information
 
 React uses this structure to schedule, pause, resume, and prioritize rendering work.
 fiber-viz exposes a safe, summarized version of this structure so you can see
@@ -78,8 +86,8 @@ how React organizes updates under the hood.
 </p>
 
 
-Notes
+## Notes
 
-Uses React's private internals (__reactFiber$), which may change between versions
+*Uses React's private internals (__reactFiber$), which may change between versions*
 
-Intended only for learning and debugging React’s internal behavior !!
+*Intended only for learning and debugging React’s internal behavior !!*
