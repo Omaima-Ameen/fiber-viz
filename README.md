@@ -37,21 +37,19 @@ It’s simply a hands-on way to explore the system behind React’s rendering.
 
 
 
+````md
 ## Installation
 
+```bash
 git clone https://github.com/Omaima-Ameen/fiber-viz
+cd fiber-viz
 
+npm install
+npm run dev   # For Vite
 
+# or
 
-* cd fiber-viz
-* npm install
-* npm run dev   # For Vite
-
-
-or
-
-* npm start     # CRA
-
+npm start     # CRA
 
 
 ## How React Fiber Works 
